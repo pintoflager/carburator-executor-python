@@ -1,4 +1,6 @@
+name = "python"
 version = "0.1.0"
+collection = "executor"
 bin = "/usr/bin/env python"
 
 targets = ["worker"]
