@@ -1,10 +1,9 @@
 name = "python"
 version = "0.1.0"
-collection = "executor"
-bin = "/usr/bin/env python"
+collection = "Executor"
+targets = ["Worker"]
 
+bin = "/usr/bin/env python"
 collections = true
 tasks = true
 actions = true
-
-targets = ["worker"]
