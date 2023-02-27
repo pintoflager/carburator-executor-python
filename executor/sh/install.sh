@@ -2,18 +2,13 @@
 
 role="$1"
 
-# App installation tasks on a local client node. Runs first
+# App installation tasks on a client node. Runs first
 if [ "$role" = 'client' ]; then
     carburator print terminal info "Executing install script on $role"
 fi
 
-# App installation tasks on remote worker node.
-if [ "$role" = 'worker' ]; then
-    carburator print terminal info "Executing install script on $role"
-fi
-
-# App installation tasks on remote commander node.
-if [ "$role" = 'commander' ]; then
+# App installation tasks on remote server node.
+if [ "$role" = 'server' ]; then
     carburator print terminal info "Executing install script on $role"
 fi
 
