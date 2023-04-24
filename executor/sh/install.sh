@@ -17,7 +17,8 @@ if ! carburator has program python3; then
     carburator print terminal error \
         "Missing required program python. Trying to install..."
 else
-    exit
+    carburator print terminal success "Python (version 3) found from the $role"
+    exit 0
 fi
 
 # TODO: Untested below
