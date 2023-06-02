@@ -23,20 +23,20 @@ fi
 
 # TODO: Untested below
 if carburator has program apt; then
-    carburator sudo apt update
-    carburator sudo apt -y install python3
+    apt-get -y update
+    apt-get -y install python3
 
 elif carburator has program pacman; then
-    carburator sudo pacman update
-    carburator sudo pacman -Suy python3
+    pacman update
+    pacman -Suy python3
 
 elif carburator has program yum; then
-    carburator sudo yum makecache --refresh
-    carburator sudo yum install python3
+    yum makecache --refresh
+    yum install python3
 
 elif carburator has program dnf; then
-    carburator sudo dnf makecache --refresh
-    carburator sudo dnf -y install python3
+    dnf makecache --refresh
+    dnf -y install python3
 
 else
     carburator print terminal error \
